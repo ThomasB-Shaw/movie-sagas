@@ -11,10 +11,8 @@ class MovieGallery extends Component {
   render() {
     return (
       <div className="Movie">
-        <li key={this.props.movie.id}>
             <button onClick={this.movieClick}><img src={this.props.movie.poster} alt={this.props.movie.title}/></button>
             <p>{this.props.movie.title}</p>
-        </li>
       </div>
     );
   }
