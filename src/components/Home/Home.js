@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './Home.css'
+import MovieGallery from '../MovieGallery/MovieGallery.js'
 
 class Home extends Component {
   // Renders the entire app on the DOM
@@ -23,10 +24,7 @@ class Home extends Component {
       <div className="Home">
           <ul>
               {this.props.reduxState.movies.map((movie) => {
-                  return <li key={movie.id}>
-                      <button><img src={movie.poster} alt={movie.title}/></button>
-                      <p>{movie.title}</p>
-                  </li>
+                  return <MovieGallery movie={movie} />
               })}
           </ul>
         <button onClick={this.logClick}>LOG</button>
