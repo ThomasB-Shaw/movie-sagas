@@ -5,7 +5,9 @@ class MovieGallery extends Component {
   // Renders the entire app on the DOM
 
     movieClick = () => {
-        console.log('You Selected', this.props.movie.title);
+        // console.log('You Selected', this.props.movie.title);
+        this.props.history.push('/details');
+        this.props.dispatch({ type: 'FETCH_THAT_MOVIE'});
     }
 
   render() {
