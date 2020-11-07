@@ -2,7 +2,7 @@ ul {
     list-style-type: none;
 }
 
-li {
+.movieGalleryItem {
     display: inline-block;
     margin-left: 5px;
 }

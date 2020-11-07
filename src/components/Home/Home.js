@@ -24,7 +24,7 @@ class Home extends Component {
       <div className="Home">
           <ul>
               {this.props.reduxState.movies.map((movie) => {
-                  return <li key={movie.id}><MovieGallery movie={movie} /></li>
+                  return <li className='movieGalleryItem' key={movie.id}><MovieGallery movie={movie} history={this.props.history}/></li>
               })}
           </ul>
         <button onClick={this.logClick}>LOG</button>
