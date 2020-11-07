@@ -3,7 +3,7 @@ import {HashRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 import Header from '../Header/Header.js'
 import Home from '../Home/Home.js'
-import MovieDetails from '../MovieDetails/MovieDetails.js'
+import MovieDetails from '../MovieDetails/MovieDetails.jsx'
 
 class App extends Component {
   // Renders the entire app on the DOM
