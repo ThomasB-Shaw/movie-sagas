@@ -5,10 +5,6 @@ import { connect } from 'react-redux';
 class MovieDetails extends Component {
   // Renders the entire app on the DOM
 
-  state = {
-      main: this.props.reduxState.thatMovie
-  }
-
   returnToGallery = () => {
       this.props.history.push('/');
   }
