@@ -16,7 +16,7 @@ class Home extends Component {
   }
 
   logClick = () => {
-      this.getMovies();
+      this.props.history.push('/addMovie');
   }
 
   render() {
@@ -27,7 +27,7 @@ class Home extends Component {
                   return <li className='movieGalleryItem' key={movie.id}><MovieGallery movie={movie} history={this.props.history}/></li>
               })}
           </ul>
-        <button onClick={this.logClick}>LOG</button>
+        <button onClick={this.logClick}>ADD</button>
       </div>
     );
   }
