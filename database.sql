@@ -62,5 +62,12 @@ VALUES
 12('Space-Opera'),
 13('Superhero');
 
+
 INSERT INTO "movies_genres" ("movie_id", "genre_id")
 Values (1,1), (1,7), (1,11), (2,2), (2,9), (2,10), (3,1), (3,13), (4,1), (4,2), (4,4), (5,6), (6,1), (6,7), (6,8), (7,1), (7,10), (8,1), (8,7), (9,2), (9,4), (9,8), (10,1), (10,7), (10,11), (10,12), (11,5), (11,6), (12,6), (12,3), (13,5), (13,10), (14,1), (14,2), (14,7);
+
+--  Currently set to return Avatar
+SELECT * FROM "movies"
+JOIN "movies_genres" ON "movies"."id" = "movies_genres"."movie_id"
+JOIN "genres" ON "genres"."id" = "movies_genres"."genre_id"
+WHERE "movies"."id" = 1;

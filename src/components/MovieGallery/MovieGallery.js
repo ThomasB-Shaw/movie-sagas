@@ -7,7 +7,7 @@ class MovieGallery extends Component {
     movieClick = () => {
         // console.log('You Selected', this.props.movie.title);
         this.props.history.push('/details');
-        this.props.dispatch({ type: 'FETCH_THAT_MOVIE'});
+        this.props.dispatch({ type: 'FETCH_THAT_MOVIE', payload: this.props.movie.id});
     }
 
   render() {
