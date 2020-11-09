@@ -71,7 +71,7 @@ class AddMovie extends Component {
         <label htmlFor='description'>Description:  </label>
             <textarea name='description' rows='5' cols='60' onChange={(event) => this.handleChange(event, 'description')}/>
             <br/>
-        <label htmlFor='genre'>Choose Genre  </label>
+        <label htmlFor='genre'>Choose Genre:  </label>
             <select name='genre' onChange={(event) => this.handleChange(event,'genre_id')}>
             <option value=''></option>
               {this.props.reduxState.genres.map((genre) => {
