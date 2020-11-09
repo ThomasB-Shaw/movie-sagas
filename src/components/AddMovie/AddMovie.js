@@ -62,8 +62,6 @@ class AddMovie extends Component {
     return (
       <div className="AddMovie">
           <form className='addForm'>
-        <button onClick={this.returnToGallery}>CANCEL</button>
-            <br/>
         <label htmlFor='title'>Title:  </label>
             <input type='text' name='title' onChange={(event) => this.handleChange(event, 'title')}/>
             <br/>
@@ -80,7 +78,8 @@ class AddMovie extends Component {
                 return <option key={genre.id}  value={genre.id}>{genre.name}</option>
               })}
             </select>
-            <button onClick={this.submitClick}>SUBMIT</button>
+            <button id='cancel' onClick={this.returnToGallery}>CANCEL</button>
+            <button id='submit' onClick={this.submitClick}>SUBMIT</button>
             </form>
       </div>
     );
