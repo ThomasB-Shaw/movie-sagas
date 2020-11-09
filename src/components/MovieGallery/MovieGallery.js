@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class MovieGallery extends Component {
-  // Renders the entire app on the DOM
-
-    movieClick = () => {
-        // console.log('You Selected', this.props.movie.title);
-        this.props.history.push('/details');
-        this.props.dispatch({ type: 'FETCH_THAT_MOVIE', payload: this.props.movie.id});
-    }
+  // Upon click of movie poster will take user to the details page to display that movies Title, Poster, Description and Genres
+  movieClick = () => {
+      this.props.history.push('/details');
+      this.props.dispatch({ type: 'FETCH_THAT_MOVIE', payload: this.props.movie.id});
+  }
 
   render() {
     return (
