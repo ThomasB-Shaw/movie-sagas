@@ -21,3 +21,7 @@ ul {
       width: 185px;
       height: 274px;
   }
+
+  #addBtn{
+    padding: 15px;
+  }

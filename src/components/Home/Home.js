@@ -25,7 +25,7 @@ class Home extends Component {
                   return <li className='movieGalleryItem' key={movie.id}><MovieGallery movie={movie} history={this.props.history}/></li>
               })}
           </ul>
-        <button onClick={this.addClick}>ADD</button>
+        <button id='addBtn'onClick={this.addClick}>ADD NEW MOVIE</button>
       </div>
     );
   }

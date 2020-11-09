@@ -27,7 +27,7 @@ The app is designed to have the functionality of movie gallery, which you can lo
 1. Upon page load you will be presented with the Home page.  This displays the movie gallery taken from our data base which should have some base items set up already.
 2. On this page you can click on the poster of a movie and it will navigate you to the details page.  
 3. Here you can see a in-depth detail list of the movie, a Title, Poster, Description and the genres assigned to that movie.  To navigate back to the Home page hit the Return to Gallery button and it will push you back to the Home page.
-4. Also on the home page you can navigate to the add movie feature page by clicking the ADD button at the bottom of the Home page.
+4. Also on the home page you can navigate to the add movie feature page by clicking the ADD NEW MOVIE button at the bottom of the Home page.
 5. On the AddMovie Page you can fill out the input fields with the Title, Poster URL, Description, and Select a Genre for a new movie.  Hitting the SUBMIT button will ensure that all fields are filled out correctly and add the information to the database.
 6.  You will then be returned to the Home page where the movie added will now be in the Home Gallery display.
 
