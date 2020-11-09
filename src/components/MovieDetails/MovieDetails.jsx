@@ -20,7 +20,7 @@ class MovieDetails extends Component {
         {this.props.reduxState.thatMovie[0] &&
         <p>{this.props.reduxState.thatMovie[0].description}</p>
         }
-        <h4>Genres</h4>
+        <h3>Genres</h3>
         <ul>
         {this.props.reduxState.thatMovie.map((info) => {
             return <li key={info.name}>{info.name}</li>

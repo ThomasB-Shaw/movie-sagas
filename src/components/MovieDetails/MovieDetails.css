@@ -2,9 +2,32 @@
   .MovieDetails {
     border-radius: 5px;
     background-color: #222222;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+  }
 
+  image {
+      text-align: center;
+  }
+
+  p {
+      text-align: left;
+  }
+
+  ul {
+      text-align: left;
+  }
+
+  h2{
+      text-align: center;
+  }
+
+  h3{
+      text-align: left;
+  }
+
+  button {
+      float: right;
   }
