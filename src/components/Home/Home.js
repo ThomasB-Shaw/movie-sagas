@@ -4,18 +4,16 @@ import './Home.css'
 import MovieGallery from '../MovieGallery/MovieGallery.js'
 
 class Home extends Component {
-  // Renders the entire app on the DOM
-
+  // On Page load will get all movies from database and Display them on the DOM
   componentDidMount = () => {
-      console.log('All Mounted der boss');
       this.getMovies();
   }
-
+  // Dispatch to SAGA to get Movie Data from Database
   getMovies = () => {
     this.props.dispatch({ type: 'FETCH_MOVIES'});
   }
-
-  logClick = () => {
+  // Navigates user to the AddMovie Page
+  addClick = () => {
       this.props.history.push('/addMovie');
   }
 
@@ -27,7 +25,7 @@ class Home extends Component {
                   return <li className='movieGalleryItem' key={movie.id}><MovieGallery movie={movie} history={this.props.history}/></li>
               })}
           </ul>
-        <button onClick={this.logClick}>ADD</button>
+        <button onClick={this.addClick}>ADD</button>
       </div>
     );
   }

@@ -19,7 +19,7 @@ function* rootSaga() {
     yield takeEvery('FETCH_THAT_MOVIE', getThatMovie);
     yield takeEvery('ADD_MOVIE', addMovie);
 }
-
+// SAGA to get all Movie data from the Database, called in Home.js
 function* fetchMovies () {
     try {
         const moviesResponse = yield Axios.get('/api/movie');
@@ -28,7 +28,7 @@ function* fetchMovies () {
             console.log('err fetching', err);
         }
 }
-
+// SAGA to get all genre data from the Database, called in AddMovie.js
 function* fetchGenres () {
     try {
         const detailsResponse = yield Axios.get('/api/genre');
@@ -37,7 +37,7 @@ function* fetchGenres () {
             console.log('err fetching', err);
         }
 }
-
+// Called in GalleryList.js, Gets both Genre and Movie data, so that it can be displayed on Details Page
 function* getThatMovie (action) {
     console.log('In That Movie', action.payload)
     try {
@@ -47,7 +47,7 @@ function* getThatMovie (action) {
             console.log('err fetching', err);
         }
 }
-
+// Hits Post request in movieRouter, Called in AddMovie Page.  Submits all data to both Movie and genre table in Database
 function* addMovie(action) {
     console.log(action.payload);
     try {
@@ -79,7 +79,7 @@ const genres = (state = [], action) => {
             return state;
     }
 }
-
+// Used to store specific movie for details page
 const thatMovie = (state = [], action) => {
     switch (action.type) {
         case 'SET_THAT_MOVIE':

@@ -6,28 +6,29 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 30px;
+    margin: 15px;
   }
 
-  image {
+  #imgDetail {
       text-align: center;
   }
 
-  p {
+  #descriptionDetail {
       text-align: left;
   }
 
-  ul {
+  #listGenreDetail {
       text-align: left;
   }
 
-  h2{
+  .titleDetail{
       text-align: center;
   }
 
-  h3{
+  #genreDetail{
       text-align: left;
   }
 
-  button {
+  #returnDetail {
       float: right;
   }

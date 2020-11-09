@@ -12,21 +12,21 @@ class MovieDetails extends Component {
     return (
       <div className="MovieDetails">
         {this.props.reduxState.thatMovie[0] &&
-        <h2>{this.props.reduxState.thatMovie[0].title}</h2>
+        <h2 className='titleDetail'>{this.props.reduxState.thatMovie[0].title}</h2>
         }
         {this.props.reduxState.thatMovie[0] &&
-        <img src={this.props.reduxState.thatMovie[0].poster} alt={this.props.reduxState.thatMovie[0].title}/>
+        <img id='imgDetail' src={this.props.reduxState.thatMovie[0].poster} alt={this.props.reduxState.thatMovie[0].title}/>
         }
         {this.props.reduxState.thatMovie[0] &&
-        <p>{this.props.reduxState.thatMovie[0].description}</p>
+        <p id='descriptionDetail'>{this.props.reduxState.thatMovie[0].description}</p>
         }
-        <h3>Genres</h3>
-        <ul>
+        <h3 id='genreDetail'>Genres</h3>
+        <ul id='listGenreDetail'>
         {this.props.reduxState.thatMovie.map((info) => {
             return <li key={info.name}>{info.name}</li>
         })}
         </ul>
-        <button onClick={this.returnToGallery}>Return to Gallery</button>
+        <button id='returnDetail' onClick={this.returnToGallery}>Return to Gallery</button>
       </div>
     );
   }

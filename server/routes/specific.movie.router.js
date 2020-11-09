@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../modules/pool')
 
-//GET ROUTE Grabs all data from genres table from database
+//GET ROUTE Grabs all data from genres table and movies table from database
 router.get('/:ID', (req, res) => {
     let movieID = req.params.ID;
   const queryText = `SELECT * FROM "movies"

@@ -38,7 +38,7 @@ router.post('/', (req, res) => {
     res.sendStatus(500)
   })
 })
-
+// Gets all info from movie table in database
 router.get('/', (req, res) => {
   const queryText = 'SELECT * FROM "movies";';
   pool.query(queryText)
