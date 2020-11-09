@@ -54,6 +54,7 @@ class AddMovie extends Component {
         } else{
             swal("Success!", "Movie Added, Returning to Movie Gallery!", "success");
             this.addMovie();
+            this.props.history.push('/');
         }
     }
 
